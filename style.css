@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    background: rgba(0, 238, 255, 0.849);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 350px;
+    padding: 15px 15px;
+    background: white;
+    margin-top: 50px;
+}
+.box h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+form{
+    width: 300px;
+    display: inline-block;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(2, 2, 50);
+    display: flex;
+    margin-top: 20px;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border: 1px solid #999;
+    
+    
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    background: rgb(2, 2, 50);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover{
+    background: #999;
+    color: black;
+}
+
+h5{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+form p{
+    display: flex;
+    margin-top: 5px;
+}
+.password-strength-box{
+   width: 300px;
+   padding: 15px 10px;
+   border: 1px solid #999;
+   position: absolute;
+   background: white;
+   top:  430px;
+   left: 616px;
+   display: none;
+
+   
+   
+   
+}
+.strength-bars{
+    width: 100%;
+    height: 3px;
+    background: #99999998;
+    margin-top: 10px;
+}
+
+.strength-bars span{
+    width: 0;
+    display: block;
+    height: 4px;
+}
+.password-strength-box h3{
+font-size: 18px;
+}
+.password-strength-box p{
+    margin-top: 5px;
+    font-size: 15px;
+}
+.password-description i{
+    color: red;
+}
+.arrow{
+   height: 15px;
+   width: 15px;
+   box-shadow: -1px 1px 0 #999;   
+   transform: rotate(45deg); 
+   position: absolute;
+   background: white;
+   top: 10px;
+   left: -7px;
+}
+
+.show-hide{
+    position: absolute;
+    top: 63%;
+    left: 59%;
+    font-size: 12px;
+}
+
+.auto-complete-box{
+    position: relative;
+    width: 350px;
+}
+.auto-complete-box input{
+    width: 300px;
+}
+
+.lists{
+    list-style: none;
+    background: white;
+    width: 100%;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    position:absolute ;
+    top: 65px;
+    left: -16px;
+    max-height: 200px;
+
+}
+
+.lists li{
+    padding: 12px;
+    font-weight: bold;
+    width: calc(100% - 24px);
+}
+
+@media only screen and (max-width: 400px){
+    
+.box{
+    width: 300px;
+    padding: 10px 10px;
+    background: white;
+    margin-top: 50px;
+}
+.box h1{
+    text-align: center;
+    font-size: 15px;
+}
+
+form{
+    width: 250px;
+    display: inline-block;
+}
+
+label{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(2, 2, 50);
+    display: flex;
+    margin-top: 20px;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border: 1px solid #999;
+    
+    
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    background: rgb(2, 2, 50);
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+h5{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+form p{
+    display: flex;
+    margin-top: 5px;
+}
+.password-strength-box{
+   width: 230px;
+   padding: 10px 8px;
+   border: 1px solid #999;
+   position: absolute;
+   background: white;
+   top:  350px;
+   left: 130px;
+   display: none;
+
+   
+   
+   
+}
+.strength-bars{
+    width: 100%;
+    height: 3px;
+    background: #99999998;
+    margin-top: 10px;
+}
+
+.strength-bars span{
+    width: 0;
+    display: block;
+    height: 4px;
+}
+.password-strength-box h3{
+font-size: 13px;
+}
+.password-strength-box p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.password-description i{
+    color: red;
+}
+.arrow{
+   height: 15px;
+   width: 15px;
+   box-shadow: -1px 1px 0 #999;   
+   transform: rotate(45deg); 
+   position: absolute;
+   background: white;
+   top: 10px;
+   left: -7px;
+}
+
+.show-hide{
+    position: absolute;
+    top: 57%;
+    left: 72%;
+    font-size: 10px;
+}
+
+.auto-complete-box{
+    position: relative;
+    width: 300px;
+}
+.auto-complete-box input{
+    width: 250px;
+}
+
+.lists{
+    list-style: none;
+    background: white;
+    width: 100%;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    position:absolute ;
+    top: 65px;
+    left: -10px;
+    max-height: 200px;
+
+}
+
+.lists li{
+    padding: 12px;
+    font-weight: bold;
+    width: calc(100% - 24px);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

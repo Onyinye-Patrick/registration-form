@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal details</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body >
+    
+    <div class="container">
+        <div class="box">
+            <h1>Personal Details </h1>
+             <form action="">
+            <label for="dob">date of birth</label>
+            <input type="date">
+
+            <h5>Gender: </h5>
+           <p><input type="radio" name="gender" value="Male" checked="checked"/> Male
+            <input type="radio" name="gender" value="Female" checked="checked"> Female
+            <input type="radio" name="gender" value="pther" checked="checked"> Other</p>
+            
+            <h5>Marital Status:</h5>
+
+               <p>
+            <input type="radio" name="Marital Status" value="Single" checked="checked"> Single
+            <input type="radio" name="Marital Status" value="Married" checked="checked"> Married
+            <input type="radio" name="Marital Status" value="divorced" checked="checked"> Divorced
+        </p>
+
+            <label for="Tel">Telephone</label>
+            <input type="tel">
+        <div class="auto-complete-box" id="box">
+            <label for="Country">Country</label>
+            <input type="text" id="countries">
+            <ul id="auto-complete-result" class="lists">
+                
+            </ul>
+        </div>
+
+        </form>
+    </div>
+    <p id="info"></p>
+    </div>
+
+  <script src="profile.js"></script>
+   <!--<script>
+    renderInfo = ()=>{
+    loc = location.href;
+    password = loc.substring(loc.indexOf("pword=") +6,loc.indexOf("&"))
+    cpassword = loc.substring(loc.indexOf("cpword=") +7)
+    document.getElementById("info").innerHTML = "Password : " +password + "<br> Confirm password: " + cpassword
+    }
+   </script>-->
+</body>
+</html>

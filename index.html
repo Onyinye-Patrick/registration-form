@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Create Account</h1>
+            <form id="form1" onsubmit="return false">
+                <label for="firstname">Firstname </label>
+                <input type="text">
+                <label for="lastname">Lastname</label>
+                <input type="text">
+                <label for="username">Username</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="email">
+                <div class="passwords">
+                    <label for="password"> Create Password </label>
+                    <input type="password" id="password-input"> 
+                    <i class="fa fa-eye-slash show-hide" id="eye-icon"></i>
+                    <label for="password">Confirm password</label>
+                    <input type="password" id="confirm-password">
+                    <p id="demo-text"></p>
+                </div>
+               
+                <button type="submit" id="submit">Submit</button>
+                
+            </form>
+            <div class="password-strength-box" id="strength-box">
+                <p>Password strength:  
+                <span id="strength-text"></span>
+                </p>
+                <div class="strength-bars"> <span id="strength-bar"></span></div>
+                <div class="password-description">
+                    <p>Password length should be at least <i>8</i> characters, and should not be more than <i>12</i> charcters. Must contain at least one <strong>number</strong>, one <strong>uppercase</strong>, one <strong>lowercase</strong>, one <strong>special character</strong>, and must not contain <i><|></i> </p>
+                    
+                    <div class="arrow"></div>
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
